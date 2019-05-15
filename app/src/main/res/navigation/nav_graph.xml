@@ -8,4 +8,5 @@
     <fragment android:id="@+id/placeholder"/>
     <fragment android:id="@+id/placeholder2"/>
     <fragment android:id="@+id/placeholder3"/>
+    <fragment android:id="@+id/placeholder4"/>
 </navigation>
