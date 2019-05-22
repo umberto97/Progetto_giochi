@@ -21,7 +21,7 @@
         </android.support.v7.widget.Toolbar>
         <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabMode="scrollable"
         >
@@ -58,12 +58,11 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp" android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent" android:focusable="true"/>
     <android.support.v7.widget.RecyclerView
-            android:layout_width="391dp"
-            android:layout_height="520dp"
-            android:id="@+id/recyclerView"
+            android:layout_width="682dp"
+            android:layout_height="557dp"
+            android:id="@+id/lista_giochi"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appbar"
             tools:listitem="@layout/riga"
-            android:layout_marginStart="8dp"
     />
 </android.support.constraint.ConstraintLayout>

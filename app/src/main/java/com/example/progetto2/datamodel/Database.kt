@@ -6,4 +6,8 @@ object Database {
     init {
             Giochi.add(Gioco("Red Dead Redemption 2", "30", "Aversa"))
     }
+    // Restituisce l'elenco di tutti i giochi presenti
+    fun getElencoGiochi() : ArrayList<Gioco> {
+        return Giochi
+    }
 }
