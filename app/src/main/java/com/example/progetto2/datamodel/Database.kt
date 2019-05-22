@@ -4,6 +4,6 @@ object Database {
 
     private var Giochi=ArrayList<Gioco>()
     init {
-            Giochi.add(Gioco("Red Dead Redemption 2", 30, "Aversa"))
+            Giochi.add(Gioco("Red Dead Redemption 2", "30", "Aversa"))
     }
 }

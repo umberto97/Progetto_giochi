@@ -4,5 +4,9 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph" app:startDestination="@id/home">
 
     <fragment android:id="@+id/home" android:name="com.example.progetto2.Home" android:label="fragment_home"
-              tools:layout="@layout/fragment_home"/>
+              tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_home_to_ps4_list" app:destination="@id/ps4_list"/>
+    </fragment>
+    <fragment android:id="@+id/ps4_list" android:name="com.example.progetto2.ps4_list"
+              android:label="fragment_ps4_list" tools:layout="@layout/fragment_ps4_list"/>
 </navigation>
