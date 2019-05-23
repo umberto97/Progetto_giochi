@@ -49,7 +49,7 @@ class fragment_inserimento : Fragment() {
     fun onButtonPressed(uri: Uri) {
         listener?.onFragmentInteraction(uri)
     }
-    
+
 
     override fun onDetach() {
         super.onDetach()

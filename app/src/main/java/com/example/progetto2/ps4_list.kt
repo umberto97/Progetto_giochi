@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.example.progetto2.datamodel.Database
 import kotlinx.android.synthetic.main.fragment_ps4_list.*
 
@@ -110,6 +111,10 @@ class ps4_list : Fragment() {
         lista_giochi.layoutManager = LinearLayoutManager(activity)
 
         // Associo l'adapter alla RecyclerView
-        lista_giochi.adapter = Adapter(Database.getElencoGiochi(), requireContext())
+        lista_giochi.adapter = Adapter(Database.getElencoGiochi(), requireContext())   // TODO : aggiungere funzione getElencoGiochi relativa alle varie console
+
+        floatingActionButton.setOnClickListener{
+            Navigation.findNavController(it).navigate(R.id.action_ps4_list_to_fragment_inserimento)
+        }
     }
 }

@@ -10,5 +10,8 @@
     <string name="game_picture">game_picture</string>
     <string name="Games">Games</string>
     <string name="news_default">Qui compariranno le news</string>
+    <string name="impostazioni">Qui compariranno le impostazioni</string>
+    <string name="imp">Impostazioni</string>
+    <string name="new_insert">Qui ci sarà la schermata per inserire i nuovi giochi</string>
 
 </resources>
