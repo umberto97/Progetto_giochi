@@ -49,9 +49,12 @@ class Home : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val v: View? = activity?.findViewById(R.id.bottomNavigation)
+        v?.visibility=View.GONE
         ps4Button.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_home_to_ps4_list)
         }
+
     }
 
 
