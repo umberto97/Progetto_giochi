@@ -4,7 +4,8 @@ object Database {
 
     private var Giochi=ArrayList<Gioco>()
     init {
-            Giochi.add(Gioco("Red Dead Redemption 2", "30", "Aversa"))
+        for (i in 1 .. 10)
+        Giochi.add(Gioco("Red Dead Redemption 2", "30", "Aversa"))
     }
     // Restituisce l'elenco di tutti i giochi presenti
     fun getElencoGiochi() : ArrayList<Gioco> {
