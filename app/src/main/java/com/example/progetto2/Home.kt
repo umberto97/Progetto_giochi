@@ -54,6 +54,13 @@ class Home : Fragment() {
         ps4Button.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_home_to_ps4_list)
         }
+        xboxButton.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_home_to_ps4_list)
+        }
+        nintendoButton.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_home_to_ps4_list)
+        }
+
 
     }
 
