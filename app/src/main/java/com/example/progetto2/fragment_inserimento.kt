@@ -6,12 +6,17 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
 import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import kotlinx.android.synthetic.main.fragment_fragment_inserimento.*
 
 class fragment_inserimento : Fragment() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        //aggiungo questa riga per aggiungere un riferimento al menu
+        setHasOptionsMenu(true)
+
+    }
 
     // Costante utilizzata per distinguere l'origine della richiesta
     val REQUEST_IMAGE_CAPTURE = 1
@@ -34,6 +39,13 @@ class fragment_inserimento : Fragment() {
             }
         }
     }
+
+    //questa funzione rende invisibile il menu nel fragment impostazioni
+    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+        super.onCreateOptionsMenu(menu, inflater)
+        menu?.clear()
+    }
+
 
     /**
      * Questo metodo viene invocato per gestire il risultato al ritorno da una activity
